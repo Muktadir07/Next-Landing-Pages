@@ -1,0 +1,1244 @@
+
+.Overflow {
+  overflow-x: hidden !important;
+}
+
+/* font-family: 'Manrope', sans-serif !important; */
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+:root {
+  --header_color: #160f4b;
+  --bg_color: #ff466d;
+  --text_color: #878497;
+  --white_color: #fff;
+}
+
+.LandingOne .container h1 {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 94px;
+    color: var(--bg_color);
+}
+
+.LandingOne .container h2 {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 55px;
+    color: var(--header_color);
+}
+
+.LandingOne .container h3 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.LandingOne .container h5{
+    font-family: "LiAdor";
+}
+
+.LandingOne .container p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text_color);
+}
+
+.LandingOne .container a {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.LandingOne .container a.bg, .LandingOne .container button.bg{
+    background-image: linear-gradient(to right, #FF466D 0%, #FF466D  51%, #160F4B  100%);
+    box-shadow: 0px 25px 46.8519px rgba(30, 20, 10, 0.1931);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 16px;
+    padding: 18px 50px;
+    color: var(--white_color);
+    margin-top: 30px;
+}
+
+.LandingOne .container a.bg:hover, .LandingOne .container button.bg:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+
+.d_justify {
+  justify-content: space-between;
+}
+
+.LandingOne .section_gaps {
+    margin-top: 130px;
+}
+
+.container input,
+label,
+textarea {
+  font-size: 16px;
+}
+
+.container button {
+  border: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne #banner{
+    background: url('../../public/images/landing_1/banner_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.LandingOne .banner_content .text{
+    margin-top: 40px;
+}
+
+.LandingOne .banner_content h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.LandingOne .banner_content h4{
+    margin-top: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: var(--bg_color);
+}
+
+.LandingOne .banner_content  h5{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--header_color);
+    margin-top: 10px;
+}
+
+.LandingOne .banner_img img {
+    width: 100%;
+}
+
+.LandingOne .banner_content .logo img {
+    height: 60px;
+}
+
+.logo.Mobile {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START delivary PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne #delivary{
+    background: var(--bg_color);
+}
+
+.LandingOne .MobileDelivary{
+    display: none;
+}
+
+.LandingOne .delivary_item{
+    text-align: center;
+    position: relative;
+    padding: 50px 0;
+}
+
+.LandingOne .delivary_item .img img {
+    height: 60px;
+}
+
+.LandingOne .delivary_border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.LandingOne .col-lg-4:last-child .delivary_border{
+    display: none;
+}
+
+.LandingOne .delivary_item h3{
+    color: var(--white_color);
+    margin-top: 20px;
+}
+
+.LandingOne #delivary .fram img{
+    width: 100%;
+}
+
+.LandingOne .product_part ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START price PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.LandingOne .price_img{
+    position: relative;
+}
+
+.LandingOne .price_img img{
+    width: 100%;
+}
+
+.LandingOne .price_img .overlay_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.LandingOne .price_img .overlay_text a.bg{
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START customized PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne #customized{
+    background: #FEF5F5;
+    padding: 120px 0;
+}
+
+.LandingOne #customized h2{
+    text-align: center;
+}
+
+.LandingOne .customized_content{
+    margin-top: 60px;
+}
+
+.LandingOne .customized_item{
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all linear .3s;
+}
+
+.LandingOne .customized_item.last_child{
+    margin-bottom: 0;
+}
+
+.LandingOne .customized_item .customized_border{
+    border: 1px solid var(--bg_color);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.LandingOne .customized_item .img {
+    width: 90px;
+    height: 85px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 57px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.LandingOne .customized_item .text{
+    margin-top: 20px;
+}
+
+.LandingOne .customized_item .text h3{
+    transition: all linear .2s;
+}
+
+.LandingOne .customized_item .text p{
+    margin-top: 10px;
+    transition: all linear .3s;
+}
+
+.LandingOne .customized_item:hover {
+    background: var(--bg_color);
+}
+
+.LandingOne .customized_item:hover .customized_border{
+    border: 1px solid var(--white_color);
+}
+
+.LandingOne .customized_item:hover h3, .LandingOne .customized_item:hover p{
+    color: var(--white_color);
+}
+
+.LandingOne .customized_item .img img {
+    height: 45px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START video PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne .video_item iframe{
+    border-radius: 20px;
+}
+
+.LandingOne .video_item div{
+    width: 100% !important;
+    height: 500px !important;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Order PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne .order h2{
+    color: var(--white_color);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START gallery PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.LandingOne .gallery{
+    position: relative;
+}
+
+.LandingOne .gallery .overlay_img {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.LandingOne .gallery_content{
+    margin-top: 60px;
+}
+
+.LandingOne .gallery .gallery_item{
+    margin-bottom: 30px;
+}
+
+.LandingOne .gallery .gallery_item.last_child{
+    margin-bottom: 0;
+}
+
+.LandingOne .gallery .gallery_item img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START customer_review PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne #customer_review{
+    margin-top: 80px;
+}
+
+.LandingOne .customer_review_content{
+    margin-top: 60px;
+}
+
+.LandingOne .customer_review_content .img{
+    margin-bottom: 30px;
+}
+
+.LandingOne .customer_review_content .img.last_child{
+    margin-bottom: 0;
+}
+
+.LandingOne .customer_review_content img{
+    width: 100%;
+}
+
+.LandingOne .customer_review_content .Video div {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.LandingOne .customer_review_content .Video iframe{
+    border-radius: 15px;
+}
+
+.LandingOne .customer_review_content .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.mySwiper.swiper-backface-hidden {
+    padding-bottom: 50px;
+}
+
+.LandingOne .customer_review_content .swiper-pagination-fraction {
+    bottom: 0px;
+}
+
+.LandingOne .customer_review_content span.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+}
+
+.LandingOne .customer_review_content .swiper {
+    padding-bottom: 50px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START form_part PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne #form_part{
+    padding: 100px 0;
+    background: url('../../public/images/landing_1/form-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.LandingOne #form_part h2{
+    color: var(--white_color);
+}
+
+.LandingOne .form_part_content{
+    margin-top: 60px;
+}
+
+.LandingOne .form_part_content h3{
+    color: var(--white_color);
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.LandingOne .custome_input{
+    margin-top: 20px;
+}
+
+.LandingOne .custome_input label{
+    color: var(--white_color);
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.LandingOne .custome_input label span{
+    color: #E11E00;
+    margin-left: 5px;
+}
+
+.LandingOne .custome_input input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid var(--text_color);
+    color: var(--white_color);
+}
+
+.LandingOne .payment{
+    background: #FFFFFF;
+    box-shadow: 0px -68px 80px rgba(0, 0, 0, 0.03), 0px 35px 46.8519px rgba(0, 0, 0, 0.0227778), 0px -3px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    border-radius: 8px;
+    width: 285px;
+    margin-top: 50px;
+}
+
+.LandingOne .payment h4{
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--bg_color);
+    padding: 20px;
+}
+
+.LandingOne .payment .checkbox{
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.LandingOne .payment .checkbox input{
+    color: var(--header_color);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.LandingOne .payment .checkbox label{
+    color: var(--header_color);
+    margin-bottom: 0;
+}
+
+.LandingOne .arrow_bg {
+    background: var(--bg_color);
+    position: relative;
+    border-radius: 0 0 7px 7px;
+}
+
+.LandingOne .arrow_bg::after {
+    position: absolute;
+    content: '';
+    top: -15px;
+    left: 20%;
+    width: 30px;
+    height: 15px;
+    border-bottom: solid 15px var(--bg_color);
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+}
+
+.LandingOne .arrow_bg p{
+    color: var(--white_color);
+    padding: 10px 20px;
+}
+
+.LandingOne .product_part{
+    border: 1px solid var(--text_color);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.LandingOne .product_part ul li{
+    padding: 20px;
+    border-bottom: 1px solid var(--text_color);
+}
+
+.LandingOne .product_part ul li:last-child{
+    border-bottom: 0;
+}
+
+.LandingOne .product_part ul li p{
+    font-family: 'Manrope', sans-serif;
+    color: var(--white_color);
+}
+
+.LandingOne .product_part ul li .left{
+    width: 70%;
+}
+
+.LandingOne .product_part ul li .left .img{
+    margin-right: 10px;
+}
+
+.LandingOne .product_part ul li .left .text h4{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--white_color);
+}
+
+.LandingOne .product_part ul li .middle {
+    text-align: center;
+    width: 5%;
+}
+
+.LandingOne .product_part ul li .middle span{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--white_color);
+}
+
+.LandingOne .product_part ul li .amount{
+    width: 25%;
+    text-align: right;
+}
+
+.LandingOne .product_part ul li .amount h3{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white_color);
+}
+
+.LandingOne .product_part ul li h5{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white_color);
+}
+
+.LandingOne .product_part .outside .item{
+    margin-bottom: 15px;
+}
+
+.LandingOne .product_part .outside .item:last-child{
+    margin-bottom: 0;
+}
+
+.LandingOne .product_part .outside .item label{
+    color: var(--white_color);
+    margin-left: 10px;
+    font-family: "LiAdor";
+
+}
+
+.LandingOne .product_part .outside .item input{
+    width: 20px;
+    height: 20px;
+    font-family: "LiAdor";
+}
+
+.LandingOne .form_part_content .dexcription {
+    margin-top: 20px;
+}
+
+.LandingOne .form_part_content .dexcription p{
+    font-family: 'Manrope', sans-serif;
+    color: var(--white_color);
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.LandingOne .form_part_content .dexcription p a{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 16px;
+    color: var(--bg_color);
+}
+
+.LandingOne .form_part_content .dexcription button{
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.LandingOne .form_part_content .dexcription button svg{
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne  #Footer{
+    background: #FFF;
+    padding: 80px 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.LandingOne #Footer .footerLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.LandingOne #Footer .footerRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.LandingOne .FooterContent h3{
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.LandingOne .FooterContent ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.LandingOne .FooterContent li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.LandingOne .FooterContent li svg{
+    color: var(--text_color);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.LandingOne .FooterContent li a {
+    font-size: 16px;
+    color: var(--text_color);
+    font-family: 'Manrope', sans-serif;
+    line-height: 24px;
+}
+
+.LandingOne .FooterContent .SocialIcon{
+    margin-top: 20px;
+}
+
+.LandingOne .FooterContent .SocialIcon a {
+    margin-right: 10px;
+
+}
+
+.LandingOne .FooterContent .SocialIcon a svg{
+    font-size: 24px;
+}
+
+.LandingOne .FooterContent .SocialIcon a.fb svg{
+    color: #2E69DB;
+}
+
+.LandingOne .FooterContent .SocialIcon a.youtube svg{
+    color: #FF0000;
+}
+
+.LandingOne .FooterContent .SocialIcon a.instagram svg{
+    color: #F65D34;
+}
+
+.LandingOne .FooterContent .SocialIcon a.twitter svg{
+    color: #33AAFF;
+}
+
+.LandingOne .tinyFooter {
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid #DDD;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+.LandingOne .tinyFooter p{
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 0;
+}
+
+.LandingOne .tinyFooter p a{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bg_color);
+    padding: 0 5px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START ThankYou PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.LandingOne  .ThankYou{
+    background: var(--bg_color);
+    padding: 100px 0;
+    position: relative;
+}
+
+.LandingOne  .ThankYou .svg {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    color: var(--white_color);
+}
+
+.LandingOne  .ThankYou .svg svg{
+    font-size: 120px;
+    color: var(--bg_color);
+}
+
+.LandingOne  .ThankYouBanner svg{
+    font-size: 80px;
+    color: var(--white_color);
+}
+
+.LandingOne  .ThankYouBanner h4{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    padding: 30px 0;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--white_color);
+}
+
+.LandingOne  .ThankYouBanner p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white_color);
+}
+
+.LandingOne .OrderTitle{
+    padding: 100px;
+}
+
+.LandingOne .OrderTitle h4{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    padding: 30px 0;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.LandingOne .OrderTitleContent{
+    background: #fef5f5;
+    padding: 30px;
+    text-align: left;
+}
+
+.LandingOne .OrderTitleContent ul{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.LandingOne .OrderTitleContent ul li{
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px dashed var(--bg_color);
+}
+
+.LandingOne .OrderTitleContent ul li:last-child{
+    border-right: 0;
+}
+
+.LandingOne .OrderTitleContent ul li p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.LandingOne .OrderTitleContent ul li h5{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.LandingOne .OrderDetail{
+    margin-top: 50px;
+}
+
+.LandingOne .OrderDetailContent{
+    background: #fef5f5;
+    padding: 30px;
+    text-align: left;
+}
+
+.LandingOne .OrderDetailContent h5{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.LandingOne .OrderDetailContentPart h4{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    width: 50%;
+    padding: 15px 0;
+    font-weight: 700;
+}
+
+.LandingOne .OrderDetailContentPart h6{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    width: 50%;
+    padding: 15px 0;
+    font-weight: 400;
+}
+
+.LandingOne .OrderDetailContentItem{
+    border-bottom: 1px dashed var(--bg_color);
+}
+
+.LandingOne .OrderDetailContentItem:last-child{
+    border-bottom: 0;
+}
+
+.LandingOne .CallUs{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.LandingOne .CallUs h5{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 15px 0;
+    font-weight: 700;
+}
+
+.LandingOne .CallUs a{
+    color: var(--bg_color);
+    transition: all linear .3s;
+}
+
+.LandingOne .CallUs a:hover{
+    color: var(--header_color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1440px) {
+
+    .LandingOne .container h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .LandingOne .container h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .LandingOne .container h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .LandingOne .LandingOne .banner_content .logo img {
+        height: 50px;
+    }
+    .LandingOne .LandingOne .banner_content h3 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .LandingOne .container a.bg, .LandingOne .container button.bg {
+        border-radius: 15px;
+        padding: 15px 40px;
+        margin-top: 20px;
+    }
+    .LandingOne .container a {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .LandingOne .banner_content .text {
+        margin-top: 30px;
+    }
+    .LandingOne .banner_content h4 {
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .LandingOne .delivary_item .img img {
+        height: 45px;
+    }
+    .LandingOne #customized {
+        padding: 45px 0;
+        padding-bottom: 30px;
+    }
+    .LandingOne .section_gaps {
+        padding-top: 80px;
+    }
+    .LandingOne .customized_item .img {
+        width: 80px;
+        height: 75px;
+    }
+    .LandingOne .customized_item .img img {
+        height: 40px;
+    }
+    .LandingOne .video_item div {
+        height: 400px !important;
+    }
+    .LandingOne .price_img .overlay_text h1 {
+        padding: 15px 0;
+    }
+    .customer_review_content .Video div {
+        height: 200px !important;
+    }
+    .LandingOne .product_part ul li .left {
+        width: 65%;
+    }
+    .LandingOne .product_part ul li {
+        padding: 15px;
+    }
+    .LandingOne .tinyFooter p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .LandingOne .tinyFooter p a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+}
+
+
+/* // XX-Large devices (larger desktops, 12800px and up) */
+@media (max-width: 1280px) {
+
+    .LandingOne .banner_content h3 {
+        font-size: 23px;
+        line-height: 40px;
+    }
+    .LandingOne .container a.bg, .LandingOne .container button.bg {
+        padding: 13px 30px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .LandingOne .banner_content h4 {
+        margin-top: 20px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .LandingOne .banner_content  h5 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .LandingOne .delivary_item h3 {
+        font-size: 20px;
+    }
+    .LandingOne .container h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .LandingOne .price_img .overlay_text h1 {
+        padding: 10px 0;
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .LandingOne .customized_item {
+        padding: 15px;
+    }
+    .LandingOne .customized_item .customized_border {
+        padding: 20px;
+    }
+    .LandingOne .customized_item .text h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .LandingOne .customized_item .text p {
+        font-size: 15px;
+    }
+    .LandingOne .customized_item .img {
+        width: 70px;
+        height: 65px;
+        padding: 15px;
+    }
+    .LandingOne .customized_item .img img {
+        height: 35px;
+    }
+    .LandingOne .price_img .overlay_text h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .LandingOne .price_img .overlay_text h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .LandingOne .gallery .overlay_img {
+        bottom: -90px;
+    }
+    .LandingOne .gallery .overlay_img img {
+        height: 90px;
+    }
+    .LandingOne .customer_review_content img {
+        width: 90%;
+    }
+    .LandingOne #form_part {
+        padding: 80px 0;
+    }
+    .LandingOne .form_part_content h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .LandingOne .product_part ul li .left .img img {
+        height: 55px;
+    }
+    .LandingOne .product_part ul li .left .text h4 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .LandingOne .product_part ul li .amount h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .LandingOne #Footer .footerLeft img {
+        width: 65%;
+    }
+    .LandingOne #Footer .footerRight img {
+        width: 65%;
+    }
+    .LandingOne #Footer .footerRight {
+        text-align: right;
+    }
+
+
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 990px) {
+
+    .LandingOne .container {
+        max-width: 90%;
+    }
+    .LandingOne #banner .col-lg-6:first-child{
+        order: 2;
+    }
+    .LandingOne #banner .col-lg-6:last-child{
+        order: 1;
+    }
+    .LandingOne .logo.Mobile{
+        display: block;
+    }
+    .LandingOne .logo.Desktop{
+        display: none;
+    }
+    .LandingOne .banner_content {
+        text-align: center;
+    }
+    .LandingOne .banner_img {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .LandingOne .banner_img img {
+        width: 70%;
+    }
+
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 768px) {
+
+    .LandingOne .container {
+        max-width: 90% !important;
+    }
+    .LandingOne .price_img img {
+        height: 275px;
+    }
+    .LandingOne .price_img .overlay_text h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .LandingOne .price_img .overlay_text a.bg {
+        margin-top: 0;
+    }
+    .LandingOne .delivary_border {
+        right: -15px;
+    }
+    .LandingOne .delivary_item h3 {
+        font-size: 18px;
+    }
+
+
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 575px) {
+
+    .LandingOne .banner_content h3 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .LandingOne .banner_img img {
+        width: 80%;
+    }
+    .LandingOne .delivary_border {
+        right: inherit;
+        left: 55%;
+        transform: rotate(90deg);
+        top: 53%;
+    }
+    .LandingOne .video_item div{
+        height: 250px !important;
+    }
+    .LandingOne section#price .LandingOne .container {
+        max-width: 100% !important;
+        padding: 0 5px;
+    }
+    .LandingOne .price_img .overlay_text h2 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 7px;
+    }
+    .LandingOne .price_img img {
+        height: 150px;
+    }
+    .LandingOne .price_img .overlay_text a.bg {
+        position: absolute;
+        bottom: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .LandingOne .price_img .overlay_text h1 {
+        font-size: 26px;
+        line-height: 30px;
+        padding: 3px 0;
+    }
+    .LandingOne section#price {
+        margin: 30px 0;
+    }
+    .LandingOne section#price.order img {
+        height: auto;
+        width: 100%;
+    }
+    .LandingOne .order .price_img .overlay_text a.bg {
+        position: unset;
+        bottom: unset;
+        left: unset;
+        transform: unset;
+    }
+    .LandingOne .order .price_img .overlay_text a.bg {
+        position: unset;
+        bottom: unset;
+        left: unset;
+        transform: unset;
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+    .LandingOne .container a.bg, .LandingOne .container button.bg {
+        border-radius: 10px;
+    }
+    .LandingOne .order .price_img .overlay_text h1 {
+        padding-top: 8px;
+    }
+    .LandingOne .right_part {
+        margin-top: 30px;
+    }
+    .FooterContent {
+        margin-bottom: 30px;
+    }
+    .LandingOne .gallery .overlay_img img {
+        height: 70px;
+    }
+    .LandingOne .gallery .overlay_img {
+        bottom: -70px;
+    }
+    .LandingOne .DesktopDelivary{
+        display: none;
+    }
+    .LandingOne .MobileDelivary{
+        display: block;
+    }
+    .LandingOne section#video .section_gaps {
+        padding-top: 50px;
+    }
+    .LandingOne .customized_content {
+        margin-top: 30px;
+    }
+    .LandingOne #price.order .section_gaps:last-child{
+        padding-top: 30px;
+    }
+    .LandingOne #customer_review {
+        margin-top: -30px;
+    }
+
+
+}
